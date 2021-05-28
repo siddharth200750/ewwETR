@@ -115,8 +115,8 @@ function keyPressed() {
 	/*var collision = Matter.SAT.collides(lstone,lmango);
 	if(collision.collided){
 		console.log("collided");
-		Matter.Body.setStatic(lmango,false);	
-	*/}
+		Matter.Body.setStatic(lmango,false);	*/
+	
   mangoBodyPosition=lmango.body.position
   stoneBodyPosition=lstone.body.position
   
