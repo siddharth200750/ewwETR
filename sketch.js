@@ -112,20 +112,14 @@ function keyPressed() {
   }
 
   function detectollision(lstone,lmango){
-	/*var collision = Matter.SAT.collides(lstone,lmango);
-	if(collision.collided){
-		console.log("collided");
-		Matter.Body.setStatic(lmango,false);	*/
 	
-  mangoBodyPosition=lmango.body.position
-  stoneBodyPosition=lstone.body.position
+	
+  mangoBodyPosition=lmango.body.position ; 
+  stoneBodyPosition=lstone.body.position ; 
   
   var distance=dist(stoneBodyPosition.x, stoneBodyPosition.y, mangoBodyPosition.x, mangoBodyPosition.y)
-  //console.log(distance)
- // console.log(lmango.r+lstone.r)
-  	if(distance<=lmango.r+lstone.r)
-    {
-      //console.log(distance);
+
+  	if(distance<=lmango.r+lstone.r) {
   	  Matter.Body.setStatic(lmango.body,false);
     }
 
